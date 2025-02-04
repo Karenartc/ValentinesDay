@@ -1,0 +1,109 @@
+/* Reinicio básico y fuentes */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  }
+  
+  /* Fondo y centrado general */
+  body {
+    width: 100%;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background: linear-gradient(135deg, #fff0f6, #ffeef8);
+    position: relative;
+    overflow: hidden;
+  }
+  
+  /* Contenedor principal */
+  .container {
+    display: flex;
+    flex-direction: column;
+    text-align: center;
+    align-items: center;
+    gap: 20px;
+    max-width: 400px;
+    margin: 20px;
+    padding: 20px;
+    background-color: rgba(255,255,255,0.9);
+    border-radius: 12px;
+    box-shadow: 0 4px 15px rgba(0,0,0,0.2);
+    z-index: 1;
+    opacity: 0;
+    animation: fadeIn 1s forwards;
+  }
+  
+  /* Animación de entrada */
+  @keyframes fadeIn {
+    to { opacity: 1; }
+  }
+  
+  /* Restricción del gif */
+  .container .tenor-gif-embed {
+    max-width: 200px;
+  }
+  
+  /* Estilo y animación del título */
+  .container h1 {
+    font-size: 1.5rem;
+    color: #d6336c;
+    animation: pulse 3s infinite;
+  }
+  
+  @keyframes pulse {
+    0% { transform: scale(1); }
+    50% { transform: scale(1.05); }
+    100% { transform: scale(1); }
+  }
+  
+  /* Texto descriptivo */
+  .container p {
+    font-size: 1rem;
+    color: #333;
+  }
+  
+  /* Botones */
+  .container .btn {
+    display: flex;
+    gap: 25px;
+    flex-wrap: wrap;
+  }
+  
+  .btn a {
+    text-decoration: none;
+    color: #fff;
+    background-color: #ff69b4;
+    padding: 10px 25px;
+    border-radius: 8px;
+    box-shadow: 0.5rem 1rem 3rem rgba(0,0,0,0.1);
+    transition: transform 0.2s, box-shadow 0.2s;
+  }
+  
+  .btn a:hover {
+    transform: scale(1.1);
+    box-shadow: 0.5rem 1rem 3rem rgba(0,0,0,0.2);
+  }
+  
+  /* Estilos para los corazones flotantes */
+  .heart {
+    position: fixed;
+    bottom: -50px;
+    pointer-events: none;
+    z-index: 0;
+    animation: float linear;
+  }
+  
+  @keyframes float {
+    0% {
+      transform: translateY(0) rotate(0deg);
+      opacity: 1;
+    }
+    100% {
+      transform: translateY(-100vh) rotate(360deg);
+      opacity: 0;
+    }
+  }
+  
