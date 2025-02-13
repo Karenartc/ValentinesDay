@@ -13,7 +13,8 @@
     display: flex;
     justify-content: center;
     align-items: center;
-    background: linear-gradient(135deg, #fff0f6, #ffeef8);
+    background: url("tenor.gif") no-repeat center center fixed;
+    background-size: cover;
     position: relative;
     overflow: hidden;
   }
@@ -49,7 +50,7 @@
   /* Estilo y animación del título */
   .container h1 {
     font-size: 1.5rem;
-    color: #d6336c;
+    color: #050562;
     animation: pulse 3s infinite;
   }
   
@@ -75,7 +76,7 @@
   .btn a {
     text-decoration: none;
     color: #fff;
-    background-color: #ff69b4;
+    background-color: #050562;
     padding: 10px 25px;
     border-radius: 8px;
     box-shadow: 0.5rem 1rem 3rem rgba(0,0,0,0.1);

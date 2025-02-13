@@ -3,7 +3,7 @@ document.addEventListener('DOMContentLoaded', function() {
     function createHeart() {
       const heart = document.createElement('div');
       heart.classList.add('heart');
-      heart.textContent = '❤️'; // Emoji de corazón
+      heart.textContent = '🌟'; // Emoji de corazón
       // Posición horizontal aleatoria (0% a 100% del ancho de la ventana)
       heart.style.left = Math.random() * 100 + 'vw';
       // Tamaño aleatorio entre 10px y 30px
